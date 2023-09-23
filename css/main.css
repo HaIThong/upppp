@@ -1,0 +1,261 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Set a background color and font family for the whole page */
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color:#fff
+    color: #333;
+  }
+  
+  /* Style the header section */
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar__logo img {
+    max-width: 100%;
+    
+  
+    
+  }
+  
+  .navbar__links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .navbar__link {
+    margin-right: 20px;
+  }
+  
+  .navbar__link a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .navbar__btn {
+    background-color: #ff4500;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  
+  /* Style the banner section */
+  #banner {
+    text-align: center;
+    padding: 100px 0;
+  }
+  
+  .banner__img img {
+    max-width: 100%;
+  }
+  
+  .banner__heading h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .banner__heading p {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  
+  .banner__btn {
+    background-color: #ff4500;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .banner__socials {
+    margin-top: 20px;
+  }
+  
+  .banner__socials a {
+    margin-right: 10px;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  /* Style the "Things I Do" section */
+  #things {
+    background-color: #fff;
+    padding: 100px 0;
+  }
+  
+  .things__dec img {
+    max-width: 100%;
+  }
+  
+  h2 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .things__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  
+  .things__item img {
+    max-width: 100%;
+  }
+  
+  .things__item--heading {
+    margin-left: 20px;
+  }
+  
+  .things__item--heading h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  /* Style the "Recent Works" section */
+  #works {
+    background-color: #f0f0f0;
+    padding: 100px 0;
+    text-align: center;
+  }
+  
+  .works__dec img {
+    max-width: 100%;
+  }
+  
+  .works__img {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 40px;
+  }
+  
+  .works__img--single {
+    flex: 1;
+    margin: 10px;
+  }
+  
+  .works__img--single img {
+    max-width: 100%;
+  }
+  
+  .works__btn button {
+    background-color: #ff4500;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  
+  /* Style the footer section */
+  #footer {
+    background-color: #333;
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+  }
+  
+  .footer__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer__logo img {
+    max-width: 100px;
+  }
+  
+  .footer__contact, .footer__socials {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .footer__contact h3, .footer__socials h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .footer__contact p {
+    font-size: 14px;
+    margin: 0;
+  }
+  
+  .footer__socials a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 20px;
+  }
+  
+  /* Responsive styles for the footer */
+  @media screen and (max-width: 768px) {
+    .footer__content {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .footer__contact, .footer__socials {
+      flex: none;
+      margin-bottom: 20px;
+    }
+  
+    .footer__socials a {
+      margin-right: 10px;
+    }
+  }
+  
+  
+  
+  /* Style social icons */
+  .banner__socials i, .footer__socials i {
+    font-size: 24px;
+    color: #ff4500;
+  }
+  
+  /* Responsive styles */
+  @media screen and (max-width: 768px) {
+    .navbar__links {
+      display: none;
+      flex-direction: column;
+      background-color: #333;
+      position: absolute;
+      top: 70px;
+      left: 0;
+      right: 0;
+      z-index: 1;
+    }
+  
+    .navbar__links.active {
+      display: flex;
+    }
+  
+    .navbar__link {
+      margin: 0;
+      text-align: center;
+      padding: 10px 0;
+    }
+  }
+  
